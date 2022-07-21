@@ -1,0 +1,19 @@
+SMAP
+edit_002dbrg_jsp.java
+JSP
+*S JSP
+*F
++ 0 edit-brg.jsp
+edit-brg.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+1,5:50
+5#1,41:54
+5#0,12:94
+17,13:107
+29,15:120
+5#2,13:134
+*E

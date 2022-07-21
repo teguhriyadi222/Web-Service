@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://mahasiswa.server/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://mahasiswa.server/">
+
+<xs:element name="cariData" type="tns:cariData"/>
+
+<xs:element name="cariDataResponse" type="tns:cariDataResponse"/>
+
+<xs:element name="editData" type="tns:editData"/>
+
+<xs:element name="editDataResponse" type="tns:editDataResponse"/>
+
+<xs:element name="getData" type="tns:getData"/>
+
+<xs:element name="getDataResponse" type="tns:getDataResponse"/>
+
+<xs:element name="hapusData" type="tns:hapusData"/>
+
+<xs:element name="hapusDataResponse" type="tns:hapusDataResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="tambahData" type="tns:tambahData"/>
+
+<xs:element name="tambahDataResponse" type="tns:tambahDataResponse"/>
+
+<xs:element name="tampilData" type="tns:tampilData"/>
+
+<xs:element name="tampilDataResponse" type="tns:tampilDataResponse"/>
+
+<xs:element name="urutkanData" type="tns:urutkanData"/>
+
+<xs:element name="urutkanDataResponse" type="tns:urutkanDataResponse"/>
+
+<xs:complexType name="editData">
+<xs:sequence>
+<xs:element name="nim" type="xs:int"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="jurusan" type="xs:string" minOccurs="0"/>
+<xs:element name="alamat" type="xs:string" minOccurs="0"/>
+<xs:element name="kontak" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilData">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getData">
+<xs:sequence>
+<xs:element name="nim" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cariData">
+<xs:sequence>
+<xs:element name="search" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cariDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="urutkanData">
+<xs:sequence>
+<xs:element name="sortir" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="urutkanDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tambahData">
+<xs:sequence>
+<xs:element name="nim" type="xs:int"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="jurusan" type="xs:string" minOccurs="0"/>
+<xs:element name="alamat" type="xs:string" minOccurs="0"/>
+<xs:element name="kontak" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tambahDataResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="hapusData">
+<xs:sequence>
+<xs:element name="nim" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hapusDataResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

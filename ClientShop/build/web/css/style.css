@@ -1,0 +1,180 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Dec-2020, 14:58:54
+    Author     : Administrator
+*/
+
+/* bar navigasi */
+#home
+{
+
+    border-radius:10px;
+    background:#fff;
+    padding:10px;
+    font-size:17px;
+}
+/* logo */
+#logo
+{   
+    font-size:20px;
+    font-weight:bolder;
+    color:#00004d;
+    letter-spacing:2px;
+}
+/* link*/
+#link a
+{
+    color:#01325d;
+    margin:0 20px 0 10px;
+    letter-spacing:1.5px;
+}
+/* link pertama / daftar barang */
+#first-link
+{
+    padding-right:6px;
+    border-right:solid 1px #ccc;
+}
+/* log out */
+#button-link ,#toogle-button
+{
+    color:#f2f2f2;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.2);
+    border-radius: 2px;
+    background-color: #fa6a48;
+    line-height: 17px;
+}
+#button-link a
+{
+    color:black;
+}
+/* tampilan button menu*/
+a,
+a:hover,
+a:focus,
+a:active {
+    color: #333;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: medium none;
+}
+
+/* Style pada Bagian content*/
+body
+{
+    background-image: url(image/bg.png);
+    align-items: center;
+    font-weight: 400;
+    background-size : 100%;
+    font-family: 'Encode Sans', sans-serif;
+
+
+}
+
+.container {
+    margin-top: 5%;
+    background-attachment : fixed;
+}
+/* style pada tabel*/
+table {
+    text-align: left;
+    font-size: 12px;
+    font-family: verdana;
+    background: #c0c0c0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table thead  {
+    cursor: pointer;
+}
+
+table thead tr,
+
+table tfoot tr {
+    background: #c0c0c0;
+}
+
+table tbody tr {
+    background: #f0f0f0;
+}
+
+td, th {
+    border: 1px solid white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style bar pencarian */
+form.cari input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    max-width: 300px;
+    background: #f1f1f1;
+}
+
+/* Style button cari */
+form.cari button {
+    float: left;
+    width: 20%;
+    padding: 13.5px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+    max-width: 70px;
+}
+
+form.cari button:hover {
+    background: #0b7dda;
+}
+
+
+form.cari::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+div.footer{
+    background:#EAD4B3;
+    font-family: 'Encode Sans', sans-serif;
+    padding: 15px ;
+    text-align: center;
+}
+
+p.bio-text{
+    color: black;
+}
+
+div.polaroid {
+    width: 25%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+div.bio {
+    text-align: center;
+    padding: 10px 20px;
+}
